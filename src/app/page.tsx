@@ -12,10 +12,13 @@ export default function Home() {
               <div className="text-center text-gray-600 mt-4">
                   Escoge tu experiencia
                   <div className={`mt-[0px] flex`}>
+                    {/**
                     <Link href="/demo/food" className=" mr-1 px-10 linear mt-16 rounded-xl bg-brand-500 py-[12px] text-base font-medium text-white transition duration-200 hover:bg-brand-600 active:bg-brand-700 dark:bg-brand-400 dark:text-white dark:hover:bg-brand-300 dark:active:bg-brand-200">
                         Food
                     </Link>        
-                    <Link href="/demo/store" className="px-10 linear mt-16 rounded-xl bg-brand-200 py-[12px] text-base font-medium text-white transition duration-200 hover:bg-brand-600 active:bg-brand-700 dark:bg-brand-400 dark:text-white dark:hover:bg-brand-300 dark:active:bg-brand-200">
+                    */
+                    }
+                    <Link rel="preload" href="/demo/tienda" className="w-full px-10 linear mt-16 rounded-xl bg-brand-200 py-[12px] text-base font-medium text-white transition duration-200 hover:bg-brand-600 active:bg-brand-700 dark:bg-brand-400 dark:text-white dark:hover:bg-brand-300 dark:active:bg-brand-200">
                         Store
                     </Link>        
                   </div>

@@ -6,6 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  
   title: process.env.NEXT_PUBLIC_NAME+' Store',
   description: process.env.NEXT_PUBLIC_NAME,
   applicationName: process.env.NEXT_PUBLIC_NAME+' Store',
@@ -17,8 +18,20 @@ export const metadata: Metadata = {
   ],
   generator: process.env.NEXT_PUBLIC_GENERATOR,
   authors: [{ name: process.env.NEXT_PUBLIC_AUTHOR, url: process.env.NEXT_PUBLIC_AUTHOR_URL }],
-  creator: process.env.NEXT_PUBLIC_AUTHOR
+  creator: process.env.NEXT_PUBLIC_AUTHOR, 
+  
+  manifest:"/manifest.json",
+
 }
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,  
+  colorScheme: '#fff',
+}
+
 
 export default function RootLayout({
   children,

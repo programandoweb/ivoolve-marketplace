@@ -33,7 +33,7 @@ const ShoppingcartComponent = () => {
                 <div className="col-span-4 md:col-span-3">
                     {   
                         Object.entries(quantities).map((product, key) => {
-                            return <ShoppinCartItem product={products.find(search=>search.id===parseInt(product[0]))} key={key}/>
+                            return <ShoppinCartItem product={products.find((search:any)=>search.id===parseInt(product[0]))} key={key}/>
                         })
                     }
                 </div>

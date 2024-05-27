@@ -1,7 +1,7 @@
 import ShoppingcartComponent from "@/components/shoppingcart";
 
 const Shoppingcart=()=>{
-    return  <ShoppingcartComponent/>
+    return  ShoppingcartComponent
 }
 export default Shoppingcart;
 

@@ -21,7 +21,7 @@ const useWhatsAppOrder = () => {
         Object.entries(quantities).map((row)=>{
             const id            =   parseInt(row[0]);
             const quantity_:any =   row[1];
-            const result:any    =   products.find(search=>search.id===id)
+            const result:any    =   products.find((search:any)=>search.id===id)
             _html   +=   "*"+result.name+"* x "+quantity_+" \n ";
         })
         

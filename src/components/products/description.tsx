@@ -86,7 +86,7 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
                     />
                     <div className="absolute top-6 right-6">
                         <button onClick={handleToggleFavorite}>
-                            {isFavorite ? <IoMdHeart className="h-10 w-10 text-brand-500 " /> : <IoMdHeartEmpty className="h-8 w-8" />}
+                            {isFavorite ? <IoMdHeart className="h-12 w-12 text-brand-500 " /> : <IoMdHeartEmpty className="h-12 w-12" />}
                         </button>
                     </div>
                 </div>

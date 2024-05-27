@@ -6,6 +6,9 @@ import { updateQuantity , updateFavorites, setQuantity} from "@/store/Slices/sho
 import { useDispatch , useSelector} from "react-redux";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
+import { MdOutlineAddCircleOutline } from "react-icons/md";
+import { MdOutlineRemoveCircleOutline } from "react-icons/md";
+
 
 interface ProductsItemProps {
     product: any;
@@ -88,20 +91,20 @@ const ProductsItem: React.FC<ProductsItemProps> = ({ product }) => {
                 </Link>
                 {/* Botón de favoritos */}
                 <div className="absolute top-3 right-3">
-                    <button onClick={handleToggleFavorite}>
-                        {isFavorite ? <IoMdHeart className="h-8 w-8"/> : <IoMdHeartEmpty className="h-8 w-8"/>}
+                    <button onClick={handleToggleFavorite} aria-label="Agregar a favoritos">
+                        {isFavorite ? <IoMdHeart className="h-10 w-10"/> : <IoMdHeartEmpty className="h-10 w-10"/>}
                     </button>
                 </div>
                 <div className="absolute bottom-3 right-3">
                     <div className="flex items-center mt-3 w-full">
-                        <button onClick={handleDecreaseQuantity} className="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded-l">
-                            -
+                        <button onClick={handleDecreaseQuantity} aria-label="Reducir cantidad de productos"  className="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded-l">
+                            <MdOutlineAddCircleOutline className="h-8 w-8"/>
                         </button>
                         <div className="bg-gray-200 text-gray-700 font-bold py-2 px-4">
                             {quantities[product.id] || 0}
                         </div>
-                        <button onClick={handleIncreaseQuantity} className="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded-r">
-                            +
+                        <button onClick={handleIncreaseQuantity} aria-label="Aumentar cantidad de productos" className="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded-r">
+                            <MdOutlineRemoveCircleOutline className="h-8 w-8"/>
                         </button>
                     </div>
                 </div>
