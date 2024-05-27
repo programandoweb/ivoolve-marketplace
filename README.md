@@ -2,6 +2,12 @@
 
 Esto es un proyecto [Next.js](https://nextjs.org/) iniciado con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+¡Impulsa tu marketplace hacia nuevas alturas con Ivoolve Marketplace, la última creación de Jorge Méndez de Programandoweb.net! Diseñada meticulosamente para destacar en SEO y ofrecer una experiencia de usuario excepcional, esta plantilla Next 14 Frontend está lista para llevar tu negocio al siguiente nivel.
+
+Ivoolve Marketplace ofrece características avanzadas, desde un carro de compra integrado hasta la capacidad de cerrar ventas directamente a través de Whatsapp. Su backend flexible te permite personalizar cada detalle según tus necesidades específicas, garantizando una integración perfecta con tu visión empresarial.
+
+No pierdas más tiempo. Descarga Ivoolve Marketplace ahora mismo y descubre cómo puede transformar tu negocio en línea. ¡Aprovecha esta oportunidad para destacarte en el competitivo mundo del comercio electrónico!
+
 ## Primeros Pasos
 
 Primero, ejecuta el servidor de desarrollo:
